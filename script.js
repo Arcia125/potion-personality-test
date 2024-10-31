@@ -57,6 +57,18 @@ function determinePersonality(selectedIngredients) {
     return 'Mischievous Spirit - You have a playful yet spooky nature!';
   } else if (selectedIngredients.includes('Nightshade')) {
     return 'Dark Sorcerer - Your powers are dark and powerful!';
+  } else if (
+    selectedIngredients.includes('Witch Hazel') &&
+    selectedIngredients.includes('Toadstool')
+  ) {
+    return 'Cunning Herbalist - You use nature to your advantage!';
+  } else if (selectedIngredients.includes('Mermaid Scale')) {
+    return 'Ocean Enchantress - Your magic is tied to the sea!';
+  } else if (
+    selectedIngredients.includes('Phoenix Feather') &&
+    selectedIngredients.includes('Vampire Blood')
+  ) {
+    return 'Legendary Sorceress - You possess ancient powers!';
   } else {
     return "Potion Apprentice - You're learning the magical arts!";
   }
