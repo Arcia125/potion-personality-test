@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potion Preference Personality Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>🎃 Potion Preference Personality Test 🧪</h1>
+    <p>Select your spooky ingredients and discover your Halloween personality!</p>
+
+    <div class="ingredients">
+      <button class="ingredient" data-ingredient="Eye of Newt">Eye of Newt</button>
+      <button class="ingredient" data-ingredient="Ghost Dust">Ghost Dust</button>
+      <button class="ingredient" data-ingredient="Nightshade">Nightshade</button>
+      <button class="ingredient" data-ingredient="Bat Wing">Bat Wing</button>
+      <button class="ingredient" data-ingredient="Spider Silk">Spider Silk</button>
+    </div>
+
+    <button id="mixButton">Mix Potion</button>
+  </div>
+
+  <!-- Modal for displaying results -->
+  <div id="resultModal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Your Halloween Personality</h2>
+      <p id="personalityText">Choose ingredients to find out!</p>
+      <button id="retakeButton">Retake Test</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

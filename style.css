@@ -1,0 +1,141 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    padding: 20px;
+    border: 2px solid #444;
+    border-radius: 10px;
+    background: #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    color: #ffcc00;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.ingredients {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.ingredient {
+    background: #ff5722;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ingredient.selected {
+    background: #d32f2f;
+    box-shadow: 0px 0px 10px 3px rgba(255, 0, 0, 0.6);
+}
+
+
+.ingredient:hover {
+    background: #ff784e;
+    transform: scale(1.1);
+}
+
+#mixButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #00796b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#mixButton:hover {
+    background: #009688;
+    transform: scale(1.1);
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #444;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: #f5f5f5;
+    position: relative;
+    max-width: 300px;
+}
+
+.modal-content h2 {
+    color: #ffcc00;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #f5f5f5;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#retakeButton {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #d32f2f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#retakeButton:hover {
+    background: #ff5252;
+}
